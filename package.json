@@ -1,0 +1,28 @@
+{
+  "name": "service-gui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "build": "tsc",
+    "exe": "nexe ./src/index.js"
+  },
+  "exports": "./dist/index.mjs",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cors": "^7.0.0",
+    "@types/node": "^22.13.4",
+    "fastify": "^3.0.0",
+    "ffi-napi": "^4.0.3",
+    "nexe": "^4.0.0-rc.6",
+    "ref-napi": "^3.0.3",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/ffi-napi": "^4.0.10",
+    "node-gyp-build": "^4.8.0"
+  }
+}
